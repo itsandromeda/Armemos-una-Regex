@@ -1,0 +1,19 @@
+input,
+button,
+textarea {
+    display: block;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 350px;
+    margin: 100px auto 150px auto;
+}
+
+#terms {
+    display: inline-block;
+}
+
+.error-text {
+    display: none;
+}
