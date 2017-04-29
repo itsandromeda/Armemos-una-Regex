@@ -7,42 +7,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
+        <h1>Resgistro</h1>
         <form>
-            <input id="name" type="text" pattern="[A-Z]{1}[a-z]+" placeholder="Nombre:" title="Por favor ingresa la primera letra con mayúscula">
-            <span id="name-error" class="error-text">Por favor ingresa la primera letra con mayúscula</span>
-
-            <input id="last-name" type="text" pattern="[A-Z]{1}[a-z]+" placeholder="Apellido:" title="Por favor ingresa la primera letra con mayúscula">
-            <span id="lastname-error" class="error-text">Por favor ingresa la primera letra con mayúscula</span>
-
-            <input id="dni" type="text" pattern="[0-9]{8}" placeholder="Documento de identidad:" title="Ingresa 8 números">
-            <span id="dni-error" class="error-text">Ingresa 8 números</span>
-
-            <label for="birth-date">Fecha de nacimiento:</label>
-            <input id="birth-date" type="date" placeholder="Fecha de nacimiento:">
-
-            <input id="cel" type="tel" pattern="[9]{1}[0-9]{8}$" placeholder="Número de celular:" required>
-            <span id="cel-error" class="error-text">Ingresa 9 números, empieza con 9</span>
-
-            <input id="home" type="tel" pattern="[0-9]{7}" placeholder="Número de casa:">
-            <span id="home-error" class="error-text">Ingresa 7 números</span>
-
-            <input id="password" type="password" placeholder="Contraseña:">
-            <input id="confirmation" type="password" placeholder="Confirmación de contraseña:">
-            <span id="password-error-a" class="error-text">El password no coincide</span>
-            <span id="password-error-b" class="error-text">El campo no puede estar vacío</span>
-
-            <textarea id="comments" placeholder="Comentarios"></textarea>
-            <span id="comments-error" class="error-text">Por favor deje sus comentarios</span>
-            <br>
-            <input id="terms" type="checkbox">
-            <label for="terms">He leído los <a href="#">términos y condiciones.</a></label>
-
-            <span id="checkbox-error" class="error-text">Esta caja debe estar marcada</span>
-            <button id="send">Enviar</button>
+            <div class="input-field">
+                <input id="name" class="field-text" type="text" pattern="[A-Z]{1}[a-z]+" placeholder="Nombre" title="Por favor ingresa la primera letra con mayúscula" required>
+                <span id="name-error" class="error-text">*Por favor ingresa la primera letra con mayúscula</span>
+            </div>
+            <div class="input-field">
+                <input id="last-name" class="field-text" type="text" pattern="[A-Z]{1}[a-z]+" placeholder="Apellido" title="Por favor ingresa la primera letra con mayúscula" required>
+                <span id="lastname-error" class="error-text">*Por favor ingresa la primera letra con mayúscula</span>
+            </div>
+            <div class="input-field">
+                <input id="dni" class="field-text" type="text" pattern="[0-9]{8}" placeholder="Documento de identidad" title="Ingresa 8 números" title="Ingresa 8 números" required>
+                <span id="dni-error" class="error-text">*Ingresa 8 números</span>
+            </div>
+            <div class="input-field">
+                <label for="birth-date">Fecha de nacimiento:</label>
+                <input id="birth-date" class="field-text" type="date" placeholder="Fecha de nacimiento">
+            </div>
+            <div class="input-field">
+                <input id="cel" class="field-text" type="tel" pattern="[9]{1}[0-9]{8}$" placeholder="Número de celular" title="Ingresa 7 números" required>
+                <span id="cel-error" class="error-text">*Ingresa 9 números, empieza con 9</span>
+            </div>
+            <div class="input-field">
+                <input id="home" class="field-text" type="tel" pattern="[0-9]{7}" placeholder="Número de casa" title="Ingresa 7 números" required>
+                <span id="home-error" class="error-text">*Ingresa 7 números</span>
+            </div>
+            <div class="input-field">
+                <input id="password" class="field-text" type="password" placeholder="Contraseña:">
+                <input id="confirmation" class="field-text" type="password" placeholder="Confirmación de contraseña">
+                <span id="password-error-a" class="error-text">*El password no coincide</span>
+                <span id="password-error-b" class="error-text">*El campo no puede estar vacío</span>
+            </div>
+            <div class="input-field">
+                <textarea id="comments" class="field-text" placeholder="Comentarios" required></textarea>
+                <span id="comments-error" class="error-text">*Por favor deje sus comentarios</span>
+            </div>
+            <div class="input-field">
+                <input id="terms" type="checkbox" required>
+                <label for="terms">He leído los <a href="#">*términos y condiciones.</a></label>
+                <span id="checkbox-error" class="error-text">*Esta caja debe estar marcada</span>
+            </div>
+            <button id="send" class="field-text">Enviar</button>
         </form>
     </div>
     <script src="assets/js/main.js"></script>

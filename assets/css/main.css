@@ -4,16 +4,133 @@ textarea {
     display: block;
 }
 
+* {
+    outline: none;
+}
+
 .wrapper {
     box-sizing: border-box;
-    width: 350px;
-    margin: 100px auto 150px auto;
+    background-color: #D1CDDB;
+    font: 100 14px 'Raleway', sans-serif;
+    width: 300px;
+    margin: 35px auto 30px auto;
+}
+
+h1 {
+    background-color: #52466A;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding: 25px 20px;
+}
+
+h1:before {
+    content: "";
+    background-color: #52466A;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: -8px;
+    left: 140px;
+    transform: rotate(45deg);
+}
+
+form {
+    position: relative;
+    padding: 25px 20px 10px 20px;
+}
+
+.input-field {
+    width: 260px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.field-text {
+    box-sizing: border-box;
+    background-color: #DEDBE2;
+    color: #333;
+    border: 3px solid #B3ABC0;
+    width: 100%;
+    padding: 5px 5px 5px 35px;
+}
+
+label[for="birth-date"] {
+    display: block;
+}
+
+#birth-date {
+    font-family: 'Raleway', sans-serif;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+#password {
+    margin-bottom: 10px;
+}
+
+#comments {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    min-height: 50px;
+    resize: none;
+}
+
+#password-error-a {
+    top: 45px;
+}
+
+#password-error-b {
+    top: 5px;
 }
 
 #terms {
     display: inline-block;
 }
 
+label[for="terms"] {
+    position: relative;
+    top: -2px;
+    font-size: 13px;
+}
+
 .error-text {
-    display: none;
+    background-color: #B3ABC0;
+    font: 600 10px 'Raleway', sans-serif;
+    color: #816FCC;
+    width: 170px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.error-text:before {
+    content: "";
+    background-color: #B3ABC0;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: -4px;
+    transform: rotate(45deg);
+}
+
+#send {
+    background-color: #52466A;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    position: absolute;
+    bottom: -45px;
+    left: 210px;
+    width: 90px;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
 }
