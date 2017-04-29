@@ -8,6 +8,7 @@
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -16,14 +17,17 @@
         <form>
             <div class="input-field">
                 <input id="name" class="field-text" type="text" pattern="[A-Z]{1}[a-z]+" placeholder="Nombre" title="Por favor ingresa la primera letra con mayúscula" required>
+                <i class="fa fa-user-o"></i>
                 <span id="name-error" class="error-text">*Por favor ingresa la primera letra con mayúscula</span>
             </div>
             <div class="input-field">
                 <input id="last-name" class="field-text" type="text" pattern="[A-Z]{1}[a-z]+" placeholder="Apellido" title="Por favor ingresa la primera letra con mayúscula" required>
+                <i class="fa fa-user-o"></i>
                 <span id="lastname-error" class="error-text">*Por favor ingresa la primera letra con mayúscula</span>
             </div>
             <div class="input-field">
                 <input id="dni" class="field-text" type="text" pattern="[0-9]{8}" placeholder="Documento de identidad" title="Ingresa 8 números" title="Ingresa 8 números" required>
+                <i class="fa fa-id-card-o"></i>
                 <span id="dni-error" class="error-text">*Ingresa 8 números</span>
             </div>
             <div class="input-field">
@@ -32,15 +36,19 @@
             </div>
             <div class="input-field">
                 <input id="cel" class="field-text" type="tel" pattern="[9]{1}[0-9]{8}$" placeholder="Número de celular" title="Ingresa 7 números" required>
+                <i class="fa fa-mobile"></i>
                 <span id="cel-error" class="error-text">*Ingresa 9 números, empieza con 9</span>
             </div>
             <div class="input-field">
                 <input id="home" class="field-text" type="tel" pattern="[0-9]{7}" placeholder="Número de casa" title="Ingresa 7 números" required>
+                <i class="fa fa-phone"></i>
                 <span id="home-error" class="error-text">*Ingresa 7 números</span>
             </div>
             <div class="input-field">
                 <input id="password" class="field-text" type="password" placeholder="Contraseña:">
+                <i class="fa fa-key"></i>
                 <input id="confirmation" class="field-text" type="password" placeholder="Confirmación de contraseña">
+                <i class="fa fa-caret-right"></i>
                 <span id="password-error-a" class="error-text">*El password no coincide</span>
                 <span id="password-error-b" class="error-text">*El campo no puede estar vacío</span>
             </div>

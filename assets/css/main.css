@@ -1,3 +1,11 @@
+html {
+    background-image: linear-gradient(to top left, #808080, #655884);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 input,
 button,
 textarea {
@@ -10,6 +18,7 @@ textarea {
 
 .wrapper {
     box-sizing: border-box;
+    box-shadow: 0 10px 10px -10px #52466A;
     background-color: #D1CDDB;
     font: 100 14px 'Raleway', sans-serif;
     width: 300px;
@@ -99,8 +108,8 @@ label[for="terms"] {
 
 .error-text {
     background-color: #B3ABC0;
-    font: 600 10px 'Raleway', sans-serif;
-    color: #816FCC;
+    font: 10px 'Raleway', sans-serif;
+    color: #fff;
     width: 170px;
     padding: 5px 10px;
     position: absolute;
@@ -133,4 +142,44 @@ label[for="terms"] {
     padding: 10px 20px;
     outline: none;
     cursor: pointer;
+}
+
+.input-field .fa {
+    background-color: #B4ACC3;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.input-field .fa-id-card-o {
+    padding: 10px 9px;
+}
+
+.input-field .fa-caret-right {
+    top: 41px;
+    padding: 8px 13px;
+}
+
+.input-field .fa-mobile {
+    font-size: 15px;
+    padding: 8px 11px;
+}
+
+.input-field .fa-phone {
+    font-size: 15px;
+    padding: 8px 9px;
+}
+
+.input-field .fa-key {
+    font-size: 12px;
+    padding: 9px 8.5px;
+}
+
+.input-field .fa-caret-right {
+    font-size: 12px;
+    padding: 9px 12.5px;
 }
